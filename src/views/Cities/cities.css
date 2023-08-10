@@ -1,0 +1,11 @@
+.containerCities{
+    min-height  :100vb;
+    background-image: url("../img/PAGINA.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
