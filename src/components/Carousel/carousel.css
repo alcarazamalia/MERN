@@ -1,26 +1,18 @@
 .CarouselPics  {
     display: flex;
-        flex-direction: column;
-        align-items: center;
-    
+    flex-direction: column;
+    align-items: center;
     background-image: url("/img/buenos-aires.jpg");
     background-size: cover;
-    Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    
-    
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
     }
-    
-    
+
     .textCarousel{
         margin: 10px;
         padding: 10px;
         background-color: rgba(51, 214, 214, 0.234);
         border-radius: 25px;
     }
-    
-    /* /////////////////// */
-    
-    
     
     .containerImages{
         width: 570px;
@@ -37,15 +29,13 @@
      
         background-repeat: no-repeat;
         background-size: cover;
-        Font-family: Copperplate, Copperplate Gothic Light;
+        font-family: 'Copperplate', 'Copperplate Gothic Light';
     }
-    
     .conteinerImages img{
         height: 230px;
         width: 250px;
         border-radius:  30px 30px  0px 0px;
     }
-    
     .conteinerPic{
         display: flex;
         flex-direction: column;
@@ -56,7 +46,60 @@
         width: 250px;
         box-shadow: 5px 5px 1px 1px rgba(32, 32, 32, 0.77);
         border-radius: 30px;
-        background-color: rgba(255, 255, 255, 0.603);
-        
+        background-color: rgba(255, 255, 255, 0.603);   
+    }
+  
+  @media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .CarouselPics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url("/img/buenos-aires.jpg");
+      background-size: cover;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      /* Ajusta el padding, margen u otros estilos si es necesario */
     }
     
+    .textCarousel {
+      margin: 10px;
+      padding: 10px;
+      background-color: rgba(51, 214, 214, 0.234);
+      border-radius: 25px;
+      /* Ajusta el padding, margen u otros estilos si es necesario */
+    }
+    
+    .containerImages {
+      width: 100%; /* Utiliza el ancho completo de la pantalla */
+      max-width: 500px; /* O ajusta este valor según tus necesidades */
+      height: auto; /* Ajusta automáticamente la altura según el contenido */
+      margin: 10px;
+      padding: 10px;
+      display: flex;
+      gap: 10px; /* Reduce el espacio entre las imágenes */
+      flex-direction: column; /* Cambia a dirección columna para el diseño vertical */
+      align-items: center; /* Centra el contenido horizontalmente */
+      border-radius: 30px;
+      background-color: rgba(140, 140, 140, 0.24);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Copperplate, Copperplate Gothic Light;
+    }
+    
+    .conteinerImages img {
+      width: 100%; /* O ajusta el tamaño de las imágenes según tus necesidades */
+      height: auto; /* Ajusta automáticamente la altura según el ancho */
+      border-radius: 30px 30px 0 0;
+    }
+    
+    .conteinerPic {
+      text-align: center;
+      margin: 5px;
+      gap: 5px;
+      width: 100%; 
+      box-shadow: 5px 5px 1px 1px rgba(32, 32, 32, 0.77);
+      border-radius: 30px;
+      background-color: rgba(255, 255, 255, 0.603);
+    }
+  }
+  

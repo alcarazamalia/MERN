@@ -1,3 +1,4 @@
+/* Estilos para pantallas grandes */
 .cian{
     background-color:#49b9ea !important
 }
@@ -33,5 +34,25 @@
 .flex-row-item {
     background-color:#49b9ea !important;
     overflow: initial;
-
 }
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .menuFooter {
+      font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+  
+    .copyText {
+      font-size: 0.8rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+  
+    .flex-row-container {
+      font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+  
+    .flex-row-container > .flex-row-item {
+      flex: 1 1 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+      height: auto; /* Ajusta la altura automáticamente en pantallas pequeñas */
+    }
+  
+    /* Otros ajustes de estilo para pantallas pequeñas si es necesario */
+  }

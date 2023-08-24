@@ -65,4 +65,15 @@ h2 {
     z-index: 1;
     border-radius: 5px;
 }
-
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .heroText {
+      font-size: 1.5rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+  
+    h2 {
+      font-size: 2rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+    }
+  
+    /* Otros ajustes de estilo para pantallas pequeñas si es necesario */
+  }
